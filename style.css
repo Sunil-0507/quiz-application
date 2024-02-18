@@ -1,0 +1,83 @@
+*{
+    /* applicable for all html elements */
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color:#001e4d;
+
+
+}
+.app{
+    background:white ;
+    width:90%;
+    max-width:600px;
+    margin: 100px auto 0;
+    /*100px from top,left-right=auto, 0=botton*/
+    border-radius: 30px;
+    padding:20px;
+
+}
+.app h1{
+    font-size:25px;
+    color:#001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+.quiz{
+    padding:30px 0;
+
+}
+.quiz h2{
+    font-size: 18px;
+    color:#001e4d;
+    font-weight: 600;
+
+}
+.btn{
+    background-color: white;
+    color:#222;
+    font-weight: 500;
+    width:100%;
+    border:1px solid #222;
+    padding:10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor:pointer;
+    transition: all 0.3s;
+}
+/* :hover will work until when button is not disabled */
+.btn:hover:not([disabled]){ 
+    background: #222;
+    color:#fff;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn
+{
+    background-color: #001e4d;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border:0;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display:none;
+    /*to display at middle . button will displayed after selecting an option*/
+
+
+}
+.correct{
+    background-color: #9aeabc;
+}
+.incorrect{
+    background-color: #ff9393;
+}
